@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e5e7eb;
+}
+
+.container {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem auto;
+}
+
+.card {
+  width: 504px;
+  height: 288px;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.card-left {
+  background-color: #2d3748;
+  color: white;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 1.2rem;
+  
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1rem;
+}
+
+.sub-text {
+  font-size: 0.85rem;
+  color: #cbd5e0;
+  font-style: italic;
+  margin: 0;
+  line-height: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.usn {
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 0.8rem;
+}
+
+.qr-code {
+  width: 65px;
+  height: 65px;
+  margin-top: 0.3rem;
+}
+
+.usn-qr {
+  margin-top: 0.75rem;
+}
+
+
+.card-right {
+  background-color: #f3f4f6;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex: 1;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.header {
+  background-color: #374151;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  line-height: 0.8rem;
+  justify-content: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.mite-logo {
+  width: 25px;
+  height: 25px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: #1f2937;
+}
+
+.label {
+  min-width: 60px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.value {
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.back-card {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 504px;
+  height: 288px;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.back-logo {
+  width: 150px;
+  height: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.college {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 0.75rem;
+  color: #ea580c;
+  font-weight: 500;
+  margin: 0;
+}
+
+.mite-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  background-color: #1f2937;
+  color: white;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.mite-link:hover {
+  background-color: #374151;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 504px;
+  height: 288px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 0.75rem;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.75rem;
+  top: 0;
+  left: 0;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
