@@ -6,41 +6,41 @@ function VisitingCardFront() {
     <div className="container">
       <div className="card">
         <div className="card-left">
-          <img src="/Photo.webp" alt="Anushree" className="profile-img" />
+          <img src={`${process.env.PUBLIC_URL}/images/Photo.webp`} alt="Random_photo" className="profile-img" />
           <h1 className="name">ANUSHREE</h1>
           <p className="sub-text">3<sup>rd</sup> year Engineer</p>
           <p className="usn">USN: <strong>4MT22CS026</strong></p>
           <div className="usn-qr">
-            <img src="/qrcode.jpg" alt="QR Code" className="qr-code" />
+            <img src={`${process.env.PUBLIC_URL}/images/qrcode.jpg`} alt="QR Code" className="qr-code" />
           </div>
         </div>
 
         <div className="card-right">
           <div className="header">
-            <img src="/mitelogo.jpeg" alt="MITE Logo" className="icon mite-logo" />
+            <img src={`${process.env.PUBLIC_URL}/images/mitelogo.jpeg`} alt="MITE Logo" className="icon mite-logo" />
             <span>MITE</span>
           </div>
 
           <div className="info">
-            <img src="/phone.jpeg" alt="Phone" className="icon" />
+            <img src={`${process.env.PUBLIC_URL}/images/phone.jpeg`} alt="Phone" className="icon" />
             <span className="label">Phone Number :</span>
             <span className="value"><strong>+91-8189654679</strong></span>
           </div>
 
           <div className="info">
-            <img src="/email.jpeg" alt="Email" className="icon" />
+            <img src={`${process.env.PUBLIC_URL}/images/email.jpeg`} alt="Email" className="icon" />
             <span className="label">Email Address :</span>
             <span className="value">anushreeacharya04@gmail.com</span>
           </div>
 
           <div className="info">
-            <img src="/insta.jpeg" alt="Instagram" className="icon" />
+            <img src={`${process.env.PUBLIC_URL}/images/insta.jpeg`} alt="Instagram" className="icon" />
             <span className="label">Instagram Id :</span>
             <span className="value">anushree_acharya0.4</span>
           </div>
 
           <div className="info">
-            <img src="/location.jpeg" alt="Location" className="icon" />
+            <img src={`${process.env.PUBLIC_URL}/images/location.jpeg`} alt="Location" className="icon" />
             <span className="label">Address :</span>
             <span className="value">Vishwakarma Nilaya, Andar</span>
           </div>
@@ -54,7 +54,7 @@ function VisitingCardBack() {
   return (
     <div className="container">
       <div className="back-card">
-        <img src="/mitelogo.jpeg" alt="MITE Logo" className="back-logo" />
+        <img src={`${process.env.PUBLIC_URL}/images/mitelogo.jpeg`} alt="MITE Logo" className="back-logo" />
         <h2 className="college">MITE</h2>
         <p className="slogan">Invent Solutions</p>
         <a href="https://mite.ac.in/" className="mite-link" target="_blank" rel="noopener noreferrer">
